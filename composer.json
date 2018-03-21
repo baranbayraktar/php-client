@@ -17,12 +17,6 @@
       "homepage": "https://github.com/baranbayraktar/php-client/contributors"
     }
   ],
-  "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/baranbayraktar/php-client"
-        }
-    ],
   "require": {
     "php": ">=5.5.0",
     "ext-curl": "*",
