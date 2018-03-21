@@ -1,5 +1,5 @@
 {
-  "name": "blockcypher/php-client",
+  "name": "baranbayraktar/php-client",
   "description": "BlockCypher's PHP SDK for REST API",
   "keywords": [
     "blockcypher",
@@ -10,11 +10,11 @@
   ],
   "type": "library",
   "license": "Apache2",
-  "homepage": "https://github.com/blockcypher/php-client",
+  "homepage": "https://github.com/baranbayraktar/php-client",
   "authors": [
     {
       "name": "BlockCypher",
-      "homepage": "https://github.com/blockcypher/php-client/contributors"
+      "homepage": "https://github.com/baranbayraktar/php-client/contributors"
     }
   ],
   "require": {
