@@ -106,8 +106,9 @@ class PrivateKeyManipulator
         $publicKey = $privateKey->getPublicKey();
         
         if ($coinSymbol == 'btc') {
-            $address = new ScriptHashAddress(WitnessProgram::V0($publicKey->getPubKeyHash())->getScript()->getScriptHash());
-            $address = $address->getAddress();
+            //$address = new ScriptHashAddress(WitnessProgram::V0($publicKey->getPubKeyHash())->getScript()->getScriptHash());
+            //$address = $address->getAddress();
+            $address = $publicKey->getHex();
         } else {
             $address = new PayToPubKeyHashAddress($publicKey->getPubKeyHash());
             $address = $address->getAddress();
