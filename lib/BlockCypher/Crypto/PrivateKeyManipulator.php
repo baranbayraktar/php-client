@@ -100,9 +100,14 @@ class PrivateKeyManipulator
         CoinSymbolValidator::validate($coinSymbol, 'coinSymbol');
 
         $network = CoinSymbolNetworkMapping::getNetwork($coinSymbol);
-
-        $publicKey = $privateKey->getPublicKey();
-        $address = $publicKey->getAddress()->getAddress($network);
+        
+        if ($coinSymbol == 'btc') {
+            $address = new ScriptHashAddress(WitnessProgram::V0($publicKey->getPubKeyHash())->getScript()->getScriptHash());
+            $address = $address->getAddress();
+        } else {
+            $address = new PayToPubKeyHashAddress($publicKey->getPubKeyHash());
+            $address = $address->getAddress();
+        }
 
         return $address;
     }
