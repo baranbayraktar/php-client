@@ -33,10 +33,10 @@ class CoinSymbolNetworkMapping
                 $network = NetworkFactory::litecoin();
                 break;
             case 'doge':
-                $network = NetworkFactory::create('1e', '16', '9e')
-                    ->setHDPubByte('02fd3929')
-                    ->setHDPrivByte('02fd3955')
-                    ->setNetMagicBytes('c0c0c0c0');
+                $network = NetworkFactory::dogecoin();
+                break;
+            case 'dash':
+                $network = NetworkFactory::dash();
                 break;
             case 'uro':
                 // NetMagicBytes: https://github.com/urocoin/uro/blob/319de97bbd56a10a3b2dca5b36be0c7a9c6603ae/src/main.cpp#L3233
