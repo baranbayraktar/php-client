@@ -2,8 +2,11 @@
 
 namespace BlockCypher\Crypto;
 
+use BitWasp\Bitcoin\Address\PayToPubKeyHashAddress;
+use BitWasp\Bitcoin\Address\ScriptHashAddress;
 use BitWasp\Bitcoin\Key\PrivateKeyFactory;
 use BitWasp\Bitcoin\Key\PrivateKeyInterface;
+use BitWasp\Bitcoin\Script\WitnessProgram;
 use BlockCypher\Exception\BlockCypherInvalidPrivateKeyException;
 use BlockCypher\Validation\CoinSymbolValidator;
 
