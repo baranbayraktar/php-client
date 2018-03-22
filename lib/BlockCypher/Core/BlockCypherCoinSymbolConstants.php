@@ -48,7 +48,7 @@ class BlockCypherCoinSymbolConstants
             'currency_abbrev' => 'LTC',
             'pow' => 'scrypt',
             'example_address' => 'LcFFkbRUrr8j7TMi8oXUnfR4GPsgcXDepo',
-            "address_first_char_list" => array('L', 'U', '3')  // TODO: confirm
+            "address_first_char_list" => array('L', 'U', '3', 'M')  // TODO: confirm
         ),
         array(
             'coin_symbol' => 'doge',
@@ -60,6 +60,17 @@ class BlockCypherCoinSymbolConstants
             'pow' => 'scrypt',
             'example_address' => 'D7Y55r6Yoc1G8EECxkQ6SuSjTgGJJ7M6yD',
             "address_first_char_list" => array('D', '9', 'A')
+        ),
+        array(
+            'coin_symbol' => 'dash',
+            'display_name' => 'Dash',
+            'display_shortname' => 'DASH',
+            'blockcypher_code' => 'dash',
+            'blockcypher_network' => 'main',
+            'currency_abbrev' => 'DASH',
+            'pow' => 'scrypt',
+            'example_address' => 'X7Y55r6Yoc1G8EECxkQ6SuSjTgGJJ7M6yD',
+            "address_first_char_list" => array('X')
         ),
         array(
             'coin_symbol' => 'uro',
