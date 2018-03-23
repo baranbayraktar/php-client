@@ -105,15 +105,18 @@ class PrivateKeyManipulator
         $network = CoinSymbolNetworkMapping::getNetwork($coinSymbol);
         $publicKey = $privateKey->getPublicKey();
         
-        if ($coinSymbol == 'btc') {
+        //if ($coinSymbol == 'btc') {
             //$address = new ScriptHashAddress(WitnessProgram::V0($publicKey->getPubKeyHash())->getScript()->getScriptHash());
             //$address = $address->getAddress();
-            $address = $publicKey->getHex();
-        } else {
-            $address = new PayToPubKeyHashAddress($publicKey->getPubKeyHash());
-            $address = $address->getAddress();
-        }
-
+        //    $address = $publicKey->getHex();
+        //} else {
+         //   $address = new PayToPubKeyHashAddress($publicKey->getPubKeyHash());
+         //   $address = $address->getAddress();
+        //}
+            
+        $address = new PayToPubKeyHashAddress($publicKey->getPubKeyHash());
+        $address = $address->getAddress();
+        
         return $address;
     }
 }
