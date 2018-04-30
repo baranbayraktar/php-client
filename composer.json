@@ -21,7 +21,7 @@
     "php": ">=5.4.0",
     "ext-curl": "*",
     "ext-json": "*",
-    "bitwasp/bitcoin": "*"
+    "bitwasp/bitcoin": "master"
   },
   "require-dev": {
     "phpunit/phpunit": "4.6.*",
